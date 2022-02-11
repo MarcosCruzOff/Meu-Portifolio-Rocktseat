@@ -1,0 +1,55 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+   
+
+<h1 class="titleProjeto">Projetos</h1>
+
+<Section class="cards">
+
+{% for item in items %}
+    <div class="card" id="{{item.id}}">
+        <div class="card_image_caixa {{'featured-wrapper' if item.featured}}">
+            <img src="/Semtitulo.png" alt="Imagem de {{item.title}}"  >
+            {% if item.featured %}
+                <div class="featured">Featured</div>
+            {% endif %}
+        </div>
+
+        <div class="card_content">
+            <p>{{item.title}}</p>
+        </div>
+
+        <div class="card_info">
+            <p>{{item.duration}}</p>
+            <p class="card_price">Free</p>
+        </div>
+    </div>
+{% endfor %}
+    
+</Section>
+
+<div class="modal-overlay ">
+    <div class="modal">
+        <a class="close-modal">
+            <i class="material-icons">close</i>
+        </a>
+
+        <div class="modal-content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="/script.js"></script>
+
+<footer>
+    <div class="Social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Linkedin</a>
+        <a href="#">GitHub</a>
+    </div>
+</footer>
+
+{% endblock %}

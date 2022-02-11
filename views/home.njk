@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  
+  <section id="Me2">
+
+    <img src="{{data.avatar_url}}" alt="Portfólio - MarcosCruz - foto" height="300px" width="300px">
+    <h1>{{data.name}}</h1>
+    <h2>{{data.role}}</h2>
+    <h2>{{data.description1}}</h2>
+    <h2>{{data.description2}}</h2>
+
+  </section>
+      
+  <div class="Social">
+
+    {% for link in data.link %}
+
+       <a href="{{link.url}}">{{link.name}}</a>
+
+    {% endfor %}   
+
+  </div>
+  
+{% endblock %}
