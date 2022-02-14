@@ -1,224 +1,228 @@
 :root {
-  --color-gold: #fd951f;
-  --color-green: #50fa7b;
-  --color-roxo: #7159c1;
+   --color-gold: #fd951f;
+   --color-green: #50fa7b;
+   --color-roxo: #7159c1;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style: none;
+   box-sizing: border-box;
+   text-decoration: none;
 }
 
 body {
-  background-color: #111116;
-  /*background-color: #282a36;*/
-  color: white;
-  font-family: 'Roboto', sans-serif;
+   background-color: #111116;
+   /*background-color: #282a36;*/
+   color: white;
+   font-family: 'Roboto', sans-serif;
 }
 
 header {
-  padding: 30px;
-  border-bottom: 1px solid #333;
-  background-color: rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   border-bottom: 1px solid #333;
+   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .links {
-  text-align: center;
+   text-align: center;
 }
 
 .links ul li {
-  display: inline;
-  margin: 0 15px;
+   display: inline;
+   margin: 0 15px;
 }
 .links a {
-  font-size: 18px;
-  color: white;
+   font-size: 18px;
+   color: white;
 }
 .links a:hover {
-  color: var(--color-gold);
-  transition: color 700ms;
+   color: var(--color-gold);
+   transition: color 700ms;
 }
 
 #Me2 {
-  text-align: center;
-  padding: 30px;
+   text-align: center;
+   padding: 30px;
 }
 #Me2 img {
-  border-radius: 50%;
-  border: 5px solid var(--color-gold);
+   border-radius: 50%;
+   border: 5px solid var(--color-gold);
 }
 #Me2 h1 {
-  font-size: 42px;
-  color: white;
-  line-height: 52px;
+   font-size: 2em;
+   color: white;
+   line-height: 52px;
 }
 #Me2 h2 {
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  line-height: 32px;
+   font-size: 1.1em;
+   font-weight: 400;
+   color: white;
+   line-height: 32px;
 }
 
 .Social {
-  text-align: center;
-  margin-top: 20px;
+   text-align: center;
+   margin-top: 20px;
 }
 .Social a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+   color: white;
+   text-decoration: none;
+   margin: 0 15px;
 }
 .Social a:hover {
-  color: var(--color-gold);
-  transition: 700ms;
+   color: var(--color-gold);
+   transition: 700ms;
 }
 
 /*=====CARDS=====PORTFOLIO=====*/
 h1 {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 20px;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 20px;
 }
 
 .cards {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+   max-width: 800px;
+   margin: 0 auto 20px auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
 }
 .card {
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  background-color: #111111;
-  cursor: pointer;
-  height: 400px;
-  width: 250px;
+   box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.4);
+   border-radius: 16px;
+   background-color: #111111;
+   cursor: pointer;
+   height: 400px;
+   width: 250px;
 }
 .card_image_caixa img {
-  width: 100%;
-  border-radius: 16px 16px 0 0;
+   width: 100%;
+   border-radius: 16px 16px 0 0;
 }
 .card_content,
 .card_info {
-  padding: 24px;
+   padding: 24px;
 }
 .card_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: white;
-  align-items: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   color: white;
+   align-items: center;
 }
 .card_price {
-  background-color: var(--color-roxo);
-  filter: brightness(90%);
-  padding: 5px 20px;
-  border-radius: 20px;
-  text-align: center;
+   background-color: var(--color-roxo);
+   filter: brightness(90%);
+   padding: 5px 20px;
+   border-radius: 20px;
+   text-align: center;
 }
 
 /*=====CARDS=====PORTFOLIO=====MODAL=====INATIVO*/
 .modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
+   background-color: rgba(0, 0, 0, 0.7);
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   opacity: 0;
+   visibility: hidden;
 }
 .modal {
-  background-color: white;
-  width: 90%;
-  height: 90%;
-  margin: 5vh auto;
-  position: relative;
+   background-color: white;
+   width: 90%;
+   height: 90%;
+   margin: 5vh auto;
+   position: relative;
 }
 .modal .close-modal {
-  color: black;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
+   color: black;
+   position: absolute;
+   right: 8px;
+   top: 8px;
+   cursor: pointer;
 }
 /*=====CARDS=====PORTFOLIO=====MODAL=====ATIVO*/
 .modal-overlay.ativo {
-  opacity: 1;
-  visibility: visible;
+   opacity: 1;
+   visibility: visible;
 }
 iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 5%;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 5%;
 }
 
 /* Featured */
 
 .featured-wrapper.card_image_caixa {
-  position: relative;
+   position: relative;
 }
 
 .featured {
-  background-color: var(--color-gold);
-  color: #111;
-  padding: 2px 8px;
-  position: absolute;
-  right: 5px;
-  border-radius: 16px;
-  top: -10px;
+   background-color: var(--color-gold);
+   color: #111;
+   padding: 2px 8px;
+   position: absolute;
+   right: 5px;
+   border-radius: 16px;
+   top: -10px;
 }
 
 /* video-page */
 .video {
-  margin: 0 auto;
-  max-width: 800px;
+   margin: 0 auto;
+   max-width: 800px;
 }
 
 .card_video_caixa {
-  position: relative;
-  padding-top: 62.5%;
+   position: relative;
+   padding-top: 62.5%;
 }
 
 .card_video_caixa iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
 }
 
 /* RESPONSIVO */
 @media (max-width: 750px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+   .cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 500px;
+   }
+   .card {
+      margin: auto 0;
+   }
 }
 
 @media (max-width: 500px) {
-  #Me2 img {
-    width: 65%;
-    height: 65%;
-  }
+   #Me2 img {
+      width: 65%;
+      height: 65%;
+   }
 
-  .Social {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
+   .Social {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+   }
 
-  .cards {
-    max-width: 300px;
-    margin: 0 auto;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+   .cards {
+      max-width: 300px;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
 
-  .card {
-    margin: 0 auto 15px auto;
-  }
+   .card {
+      margin: 0 auto 15px auto;
+   }
 }
